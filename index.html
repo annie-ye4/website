@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset ="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Annie Ye Personal Website</title>
+        <link rel="stylesheet" href="styles/styles-home.css"/>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        
+    <div class="header">
+        <h1>Annie Ye</h1>
+        <div class="typing-container">
+            <p id="typingMessage" class="welcome"></p>
+            <div class="line"></div>
+            <svg class="squiggly-line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20" preserveAspectRatio="none">
+                <path d="M0 10 Q 10 0, 20 10 T 40 10 Q 50 0, 60 10 T 80 10 Q 90 0, 100 10" />
+              </svg>
+        </div>
+        <button class="scroll" style="font-family: 'nexa-light'" onclick="scrollToSection('info', 0)">scroll for more!</button>
+        <p class="scroll" style="margin-top:95vh">↓</p>
+    
+    </div>
+    <div id="info" class="website-info">
+        <h2>Hi, I'm Annie!</h2>
+        <p class="page2">I'm currently a sophomore exploring computer science<br> at Brown University.</p>
+        <p class="page2 line2">I'm from San Francisco and now I live in Providence, <br>Rhode Island for school!</p>
+        <p class="page2 line3">I'm interested in data science and artificial intelligence.</p>
+        <button id="aboutButton" class="p2-button" onclick="changeColor(this)">
+            <a href="about.html" class="p2-link">read more about me</a>
+        </button>
+        <img class="selfie" src="images/selfie.JPG">
+    </div>
+    <div id="experience" class="experience">
+        <h3>Experience / Coursework</h3>
+        <p class="experience-heading">Work Experience</p>
+        <p class="course-heading">Courses</p>
+        <!-- <p class="experience-heading" style="left:130vh">Certifications</p> -->
+        <p class="work-heading">MissionBit Intern</p>
+        <p class="work-description mb1">
+            • Actively collaborated on group projects via Repl.it,applying weekly <br>
+            material to enhance programming fundamentals with Python interpreter.<br>
+        </p>
+        <p class="work-description mb2">
+            • Developed a user-friendly "Basic Needs Finder" using user input and <br>
+            IP addresses to locate accessible food and water resources, showcasing <br>
+            technical skills and creativity.
+        </p>
+        <p class="work2-heading">TechKnowHow Instructor Lead</p>
+        <p class="work-description tkh1">
+            • Developed campers' technical skills through hands-on projects, building<br>
+            motorized EV3 robots, and engineering innovative creations.<br>
+        </p>
+        <p class="work-description tkh2">
+            • Facilitated engaging learning experiences in coding with Scratch, empowering<br>
+            campers to design and create interactive games, while fostering a solid<br>
+             foundation in computer science principles.
+        </p>
+        
+        <p class="courses">
+            • Intro to Unix/Linux<br>
+            • Intro to SQL/NoSQL<br>
+            • Object-Oriented Programming<br>
+            • Program Design w/ Data Structures and Algorithms<br>
+            • Artificial Intelligence<br>
+            • Intro to Software Engineering
+        </p>
+        <img class="p3-icons" src="images/suitcase.png">
+        <img class="p3-icons-courses" src="images/book.png">
+        <button id="projectsButton" class="p3-button" onclick="changeColor(this)">
+            <a href="projects.html" class="p3-link">explore my projects</a>
+        </button>
+    </div>
+
+    <button id="aboutButton" class="menu-button about-button">
+            <a href="about.html" class="nav-link">About</a></button>
+        <button id="projectButton"class="menu-button project-button">
+            <a href="projects.html" class="nav-link">Projects</a></button>  
+        <button class ="menu-button experience-button" onclick="scrollToSection('experience', 0)">
+            Experience</button>
+    </body>
+</html>

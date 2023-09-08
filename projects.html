@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Projects</title>
+        <link rel="stylesheet" href="styles/styles-projects.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>Projects</h1>
+        <p class="subtitle">some of my creations!</p>
+        <button id="homeButton" class="menu-button home-button">
+            <a href="index.html" class="nav-link">Home</a></button>
+        <!-- <button id="aboutButton"class="menu-button about-button">
+            <a href="about.html" class="nav-link">About</a></button>  -->
+        <button id="cs15Button" class="menu-button cs15-button" onclick="scrollToSection()">
+            cs15
+        </button>
+        <button id="cs200Button" class="menu-button cs200-button" style="text-decoration-color: lightblue;"
+        onclick="scrollToSection('cs200', 0)">
+            cs200
+        </button>
+        <button id="otherButton" class="menu-button other-button" style="text-decoration-color: #006400;"
+        onclick="scrollToSection('other', 0)">
+            other
+        </button>
+        <div class="tetris-container">
+           <p class="tetris-title">Tetris (CS15)</p>
+           <p class="tetris-desc">
+            The Tetris game project effectively applies 
+            <span style="font-family:'nexa-heavy'">object-oriented principles</span> 
+            and <span style="font-family:'nexa-heavy'">class interaction</span> 
+            to create a functional game with dynamic gameplay and color-based 
+            mechanics. Through skillful design choices and efficient implementation, the project 
+            demonstrates proficiency in managing game flow and integrating 
+            <span style="font-family:'nexa-heavy'">core gameplay features</span>.
+           </p>
+           <a href="https://github.com/brown-cs15-2022/tetris-annie-ye4" target="_blank">
+            <img class="github1" src="https://www.shareicon.net/data/2016/06/20/606964_github_4096x4096.png">
+           </a>
+        <video class="tetris-video" autoplay muted>
+            <source src="videos/tetris.mov" type="video/mp4">
+        </video>   
+        </div>    
+        
+
+        <div class="pacman-container">
+            <p class="pacman-title">Pacman (CS15)</p>
+            <p class="pacman-desc">
+                The project integrates <span style="font-family:'nexa-heavy'">dynamic gameplay</span>, 
+                movement mechanics, and <span style="font-family:'nexa-heavy'">collision handling</span>, 
+                highlighting logic implementation and code organization. 
+                The design efficiently manages modes, employs <span style="font-family:'nexa-heavy'">enums for data representation</span>, and 
+                modularizes movement methods for clarity and maintainability.
+            </p>
+            <a href="https://github.com/brown-cs15-2022/pacman-annie-ye4" target="_blank">
+             <img class="github2" src="https://www.shareicon.net/data/2016/06/20/606964_github_4096x4096.png">
+            </a>
+         <video class="pacman-video" autoplay muted>
+             <source src="videos/pacman.mov" type="video/mp4">
+         </video> 
+         </div>
+
+         <div id="cs200"class="tree-container">
+            <p class="tree-title">Decision Tree (CS200)</p>
+            <p class="tree-desc">
+                This project involves implementing a <span style="font-family:'nexa-heavy'">classic machine learning 
+                algorithm</span> using decision trees to <span style="font-family:'nexa-heavy'">generate predictive functions 
+                based on training data.</span> It offers practice in designing with classes,
+                 utilizing <span style="font-family:'nexa-heavy'">tree structures</span>, and understanding the concept of machine 
+                 learning as well as <span style="font-family:'nexa-heavy'">testing and recursion</span> in programming.
+            </p>
+            <a href="https://github.com/brown-cs200-spring2023/pr01-decision-tree-aye15-cduong5" target="_blank">
+             <img class="github3"
+             src="https://www.shareicon.net/data/2016/06/20/606964_github_4096x4096.png">
+            </a>
+         <img class="tree-pic" src="images/tree.png">
+         </div>
+
+         <div class="planner-container">
+            <p class="planner-title">Travel Planner (CS200)</p>
+            <p class="planner-desc">
+                In this project, I created a travel route planning system allowing users to 
+                request routes based on priorities such as price, time, and directness. The 
+                project encompasses skills in <span style="font-family:'nexa-heavy'">model-view-controller, function objects, generics,
+                data structures, algorithm implementation and debugging,</span> and handling complex class 
+                interactions, while applying algorithms like <span style="font-family:'nexa-heavy'">BFS and Dijkstra's</span> for pathfinding and 
+                integrating code with user interactions.
+            </p>
+            <a href="https://github.com/brown-cs200-spring2023/pr02-aye15-jehaile" target="_blank">
+             <img class="github4" src="https://www.shareicon.net/data/2016/06/20/606964_github_4096x4096.png">
+            </a>
+            <img class="planner-pic" src="images/planner.png">
+         </div>
+
+         <div id ="other"class="dic-container">
+            <p class="dic-title">Dictionary</p>
+            <p class="dic-desc">
+                This project demonstrated my proficiency in front-end web development, 
+                JavaScript programming, and <span style="font-family:'nexa-heavy'">API integration for real-time data retrieval. </span>
+                Key achievements included user-friendly features like word 
+                pronunciation and <span style="font-family:'nexa-heavy'">structured data presentation</span>, showcasing my commitment to creating engaging and 
+                <span style="font-family:'nexa-heavy'">informative digital solutions</span>.
+            </p>
+            <a href="https://github.com/annie-ye4/dictionary" target="_blank">
+             <img class="github5" src="https://www.shareicon.net/data/2016/06/20/606964_github_4096x4096.png">
+            </a>
+         <video class="dic-video" autoplay controls>
+             <source src="videos/dic.mov" type="video/mp4">
+         </video>   
+         </div>  
+    </body>
+</html>

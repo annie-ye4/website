@@ -1,0 +1,997 @@
+@media screen and (min-width: 768px) {
+  body{
+    margin: 0;
+    background-color: black;
+}
+
+h1{
+    color: white;
+    /* margin-top: 50vh; */
+    margin-bottom: 0;
+    font-family: 'nexa-heavy';
+    font-size: 100px;
+}
+
+button{
+  display: block;
+  font-size: 20px;
+  width: 150px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top : 0.8em;
+  color: white;
+  background-color: black;
+  border: none;
+  text-decoration: none;
+}
+
+@font-face {
+    font-family: 'nexa-heavy';
+    src: url('Nexa-Heavy.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'nexa-light';
+    src: url('Nexa-ExtraLight.ttf') format('truetype');
+  }
+
+@font-face {
+  font-family: 'mono';
+  src: url('mono.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'cascadia';
+  src: url('Cascadia.ttf') format('truetype');
+}
+
+.menu-button{
+  font-family: 'nexa-light';
+  position: relative;
+    font-size: 25px;
+    text-decoration: none;
+    border: none;
+    /* text-decoration-skip-ink: none; */
+    /* text-underline-offset: 0.4em; */
+    cursor: pointer;
+    width: 170px;
+    height: 60px;
+}
+
+.menu-button:hover{
+  text-decoration:underline;
+  text-decoration-color: #006400;
+  text-underline-offset: 15px;
+}
+
+  .nav-link:hover{
+    color: inherit;
+    text-decoration: black;
+  }
+  
+.nav-link{
+  color: inherit;
+}
+
+
+p{
+  font-size: 20px;
+}
+
+.about-button{
+  position: absolute;
+  top: 20px;
+  right: 410px;
+}
+
+.experience-button{
+  position: absolute;
+  top: 20px;
+  right: 240px;
+}
+
+.project-button{
+  position: absolute;
+  top: 20px;
+  right: 60px;
+}
+
+.about{
+  margin-bottom: none;
+  padding-bottom: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 15;
+  background-color: #f9f9f9;
+  min-width: 160px;
+}
+
+.home-button:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.welcome {
+  color: white;
+  font-family: 'cascadia';
+  margin-top:0;
+  position: relative;
+  display: inline-block;
+  cursor: auto; /* Set the initial cursor to the default value */
+  pointer-events: auto; /* Allow pointer events on the element */
+  font-size: 30px;
+}
+
+.header {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height:100vh;
+}
+
+.website-info{
+  background-color: gray;
+  height: 100vh;
+}
+
+.experience{
+  height: 100vh;
+}
+
+h2{
+  font-family: 'nexa-heavy';
+  font-size: 50px;
+  margin-top: 25vh;
+  color: white;
+  pointer-events: none;
+  position: absolute;
+  left: 100px;
+}
+
+h3{
+  font-family: 'nexa-heavy';
+  font-size: 50px;
+  margin-top: 10vh;
+  height: 20px;
+  color: white;
+  position: absolute;
+  left: 300px;
+  width: 700px;
+}
+
+.page2{
+  font-family: 'nexa-light';
+  font-size: 25px;
+  position: absolute;
+  left: 100px;
+  margin-top: 38vh;
+  color: white;
+  line-height: 30px;
+}
+
+.line2{
+  font-family: 'nexa-light';
+  font-size: 25px;
+  position: absolute;
+  left: 100px;
+  color: white;
+  line-height: 30px;
+  margin-top:48vh;
+}
+
+.line3{
+  font-family: 'nexa-light';
+  font-size: 25px;
+  position: absolute;
+  left: 100px;
+  color: white;
+  line-height: 30px;
+  margin-top:59vh;
+}
+
+.p2-button{
+  background-color: #555555;
+  color: white;
+  padding: 5px;
+  width: 170px;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: 'nexa-light';
+  position: absolute;
+  left: 100px;
+  margin-top: 67vh;
+  transition: transform 0.2s ease;
+}
+
+.p3-button{
+  background-color: #4C7582;
+  color: white;
+  padding: 5px;
+  width: 170px;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: 'nexa-light';
+  position: absolute;
+  left: 80px;
+  margin-top: 90vh;
+  transition: transform 0.2s ease;
+}
+
+.p2-link, .p3-link{
+  color: inherit;
+  text-decoration: none;
+}
+
+.p2-button:hover, .p3-button:hover {
+  transform: translateX(5px);
+}
+
+.selfie{
+  height: 50%;
+  width: auto;
+  position: absolute;
+  left: 800px;
+  margin-top: 25vh;
+}
+
+/* Add the CSS for the vertical line */
+.typing-container {
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 35px;
+  background-color: white;
+  transform-origin: top;
+  animation: typing 0.6s steps(1) infinite;
+}
+
+@keyframes typing {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+
+.about-button a,
+.project-button a,
+.contact-button a{
+  text-decoration: none; 
+}
+
+/* .squiggly-line {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  height: 1px;
+  width: 10px;
+  background-color: red;
+  transform-origin: center;
+} */
+
+.squiggly-line {
+  position: absolute;
+  top:35px;
+  left:0;
+  width: 20px;
+  height: 4px;
+  fill: none;
+  stroke: #a30000;
+  stroke-width: 15;
+
+}
+
+.scroll{
+  color: white;
+  font-size: 15px;
+  margin: 0;
+  position: absolute;
+  margin-top: 90vh;
+}
+.scroll:hover{
+  cursor: pointer;
+}
+
+.experience-heading{
+  font-family: 'nexa-heavy';
+  color: lightblue;
+  text-decoration:underline;
+  text-decoration-color: white;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 7px;
+  position: absolute;
+  top: 220vh;
+  left: 80px;
+  font-size: 40px;
+}
+
+.course-heading{
+  font-family: 'nexa-heavy';
+  color: lightblue;
+  text-decoration:underline;
+  text-decoration-color: white;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 7px;
+  position: absolute;
+  top: 220vh;
+  left: 92vh;
+  font-size: 40px;
+}
+
+.work-heading{
+  font-family: 'nexa-heavy';
+  font-size: 25px; 
+  color: #f5f5f5;
+  position: absolute;
+  left: 80px;
+  top: 230vh;
+}
+
+.work2-heading{
+  font-family: 'nexa-heavy';
+  font-size: 25px; 
+  color: #f5f5f5;
+  position: absolute;
+  left: 80px;
+  top: 254vh;
+}
+
+.work-description{
+  font-family: 'nexa-light';
+  font-size: 15px; 
+  color: #f5f5f5;
+  position: absolute;
+  left: 80px;
+  line-height: 20px;
+  word-spacing: 2px;
+}
+
+.tkh1{
+  top: 261vh;
+}
+
+.tkh2{
+  top: 267vh;
+}
+
+.mb1{
+position: absolute;
+left: 80px;
+top: 238vh;
+}
+
+.mb2{
+  position: absolute;
+  left: 80px;
+  top: 245vh;
+}
+
+.courses{
+  font-family: 'nexa-heavy';
+  font-size: 25px; 
+  color: #f5f5f5;
+  position: absolute;
+  margin-left: 92vh;
+  top: 230vh;
+  line-height: 53px;
+}
+
+.p3-icons{
+  position: absolute;
+  left:80px;
+  top: 280vh;
+  width: 4%;
+  height:auto;
+}
+
+.p3-icons-courses{
+  position: absolute;
+  top: 282vh;
+  width: 4%;
+  height:auto;
+  left:92vh;
+}
+
+.highlight-text {
+  color: lightblue; /* Change this color to your desired highlight color */
+}
+}
+
+/* half-screen */
+@media (max-width: 770px) {
+  body{
+      margin: 0;
+      background-color: black;
+  }
+  
+  h1{
+      color: white;
+      /* margin-top: 50vh; */
+      margin-bottom: 0;
+      font-family: 'nexa-heavy';
+      font-size: 60px;
+  }
+  
+  button{
+    display: block;
+    font-size: 20px;
+    width: 15vh;
+    height: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top : 0.8em;
+    color: white;
+    background-color: black;
+    border: none;
+    text-decoration: none;
+  }
+  
+  @font-face {
+      font-family: 'nexa-heavy';
+      src: url('Nexa-Heavy.ttf') format('truetype');
+    }
+  
+  @font-face {
+      font-family: 'nexa-light';
+      src: url('Nexa-ExtraLight.ttf') format('truetype');
+    }
+  
+  @font-face {
+    font-family: 'mono';
+    src: url('mono.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'cascadia';
+    src: url('Cascadia.ttf') format('truetype');
+  }
+  
+  .menu-button{
+    font-family: 'nexa-light';
+    position: relative;
+      font-size: 20px;
+      text-decoration: none;
+      border: none;
+      /* text-decoration-skip-ink: none; */
+      /* text-underline-offset: 0.4em; */
+      cursor: pointer;
+      width: 100px;
+      height: 60px;
+  }
+  
+  .menu-button:hover{
+    text-decoration:underline;
+    text-decoration-color: #006400;
+    text-underline-offset: 15px;
+  }
+  
+    .nav-link:hover{
+      color: inherit;
+      text-decoration: black;
+    }
+    
+  .nav-link{
+    color: inherit;
+  }
+  
+  
+  p{
+    font-size: 20px;
+  }
+  
+  .about-button{
+    position: absolute;
+    top: 20px;
+    right: 230px;
+  }
+  
+  .project-button{
+    position: absolute;
+    top: 20px;
+    right: 370px;
+  }
+  
+  .experience-button{
+    position: absolute;
+    top: 20px;
+    right: 80px;
+  }
+  
+  .about{
+    margin-bottom: none;
+    padding-bottom: none;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 15;
+    background-color: #f9f9f9;
+    min-width: 160px;
+  }
+  
+  .home-button:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .welcome {
+    color: white;
+    font-family: 'cascadia';
+    margin-top:0;
+    position: relative;
+    display: inline-block;
+    cursor: auto; /* Set the initial cursor to the default value */
+    pointer-events: auto; /* Allow pointer events on the element */
+    font-size: 15px;
+  }
+  
+  .header {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height:100vh;
+  }
+  
+  .website-info{
+    background-color: gray;
+    height: 100vh;
+  }
+  
+  .experience{
+    height: 100vh;
+  }
+  
+  h2{
+    font-family: 'nexa-heavy';
+    font-size: 35px;
+    margin-top: 10vh;
+    color: white;
+    pointer-events: none;
+    position: absolute;
+    left: 40px;
+  }
+  
+  h3{
+    font-family: 'nexa-heavy';
+    font-size: 35px;
+    margin-top: 10vh;
+    height: 20px;
+    color: white;
+    position: absolute;
+    margin-right: none;
+    left: 30px;
+  }
+  
+  .page2{
+    font-family: 'nexa-light';
+    font-size: 15px;
+    position: absolute;
+    left: 45px;
+    margin-top: 55vh;
+    margin-right:20px;
+    color: white;
+    line-height: 20px;
+  }
+
+  .line2{
+    position: absolute; 
+    margin-top: 66vh;
+  }
+  .line3{
+    position: absolute; 
+    margin-top: 77vh;
+  }
+  
+  .p2-button{
+    background-color: #555555;
+    color: white;
+    padding: 5px;
+    width: 170px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'nexa-light';
+    position: absolute;
+    left: 45px;
+    margin-top: 86vh;
+    transition: transform 0.2s ease;
+  }
+  
+  .p3-button{
+    background-color: #4C7582;
+    color: white;
+    padding: 5px;
+    width: 170px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'nexa-light';
+    position: absolute;
+    left: 30px;
+    margin-top: 103vh;
+    transition: transform 0.2s ease;
+  }
+  
+  .p2-link, .p3-link{
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .p2-button:hover, .p3-button:hover {
+    transform: translateX(5px);
+  }
+  
+  .selfie{
+    height: 30%;
+    width: auto;
+    position: absolute;
+    left: 45px;
+    margin-top: 20vh;
+  }
+  
+  /* Add the CSS for the vertical line */
+  .typing-container {
+    position: relative;
+  }
+  
+  .line {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 35px;
+    background-color: white;
+    transform-origin: top;
+    animation: typing 0.6s steps(1) infinite;
+  }
+  
+  @keyframes typing {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  
+  .about-button a,
+  .project-button a,
+  .contact-button a{
+    text-decoration: none; 
+  }
+  
+  /* .squiggly-line {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    height: 1px;
+    width: 10px;
+    background-color: red;
+    transform-origin: center;
+  } */
+  
+  .squiggly-line {
+    position: absolute;
+    top:20px;
+    left:0;
+    width: 10px;
+    height: 4px;
+    fill: none;
+    stroke: #a30000;
+    stroke-width: 15;
+  
+  }
+  
+  .scroll{
+    color: white;
+    font-size: 15px;
+    width: 200px;
+    margin: 0;
+    position: absolute;
+    margin-top: 90vh;
+  }
+
+  .scroll:hover{
+    cursor: pointer;
+  }
+  
+  .experience-heading{
+    font-family: 'nexa-heavy';
+    color: lightblue;
+    text-decoration:underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 7px;
+    position: absolute;
+    top: 223vh;
+    left: 30px;
+    font-size: 25px;
+  }
+  
+  .course-heading{
+    font-family: 'nexa-heavy';
+    color: lightblue;
+    text-decoration:underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 7px;
+    position: absolute;
+    top: 263vh;
+    left: 30px;
+    font-size: 25px;
+  }
+  
+  .work-heading{
+    font-family: 'nexa-heavy';
+    font-size: 20px; 
+    color: #f5f5f5;
+    position: absolute;
+    left: 30px;
+    top: 230vh;
+  }
+
+  .work2-heading{
+    font-family: 'nexa-heavy';
+    font-size: 20px; 
+    color: #f5f5f5;
+    position: absolute;
+    left: 30px;
+    top: 245vh;
+    margin-right: 10px;
+  }
+
+  .tkh1{
+    margin-top: 12vh;
+  }
+  
+  .tkh2{
+    font-size: 30px;
+    margin-top: 16vh;
+  }
+  
+  .work-description{
+    font-family: 'nexa-light';
+    font-size: 9px; 
+    color: #f5f5f5;
+    position: absolute;
+    left: 30px;
+    top: 239vh;
+    line-height: 14px;
+    word-spacing: 2px;
+    margin-right: 12px;
+  }
+
+  .mb1{
+    position: absolute;
+      left: 30px;
+      top: 235vh;
+      margin-right: 10px;
+    }
+    
+  .mb2{
+      position: absolute;
+      left: 30px;
+      top: 239vh;
+  }
+  
+  .courses{
+    font-family: 'nexa-heavy';
+    font-size: 15px; 
+    color: #f5f5f5;
+    position: absolute;
+    margin-left: 30px;
+    top: 270vh;
+    line-height: 35px;
+  }
+  
+  .p3-icons{
+    position: absolute;
+    left:250px;
+    top: 226.7vh;
+    width: 7%;
+    height:auto;
+  }
+
+  .p3-icons-courses{
+    position: absolute;
+    left: 140px;
+    top: 266.6vh;
+    width: 7%;
+    height:auto;
+  }
+  
+  .highlight-text {
+    color: lightblue; /* Change this color to your desired highlight color */
+  }
+
+  .extra{
+    color: black;
+    font-size: 30px;
+  }
+  }
+
+  @media screen and (min-width: 771px) and (max-width: 1100px){
+    h1{
+      color: white;
+    }
+
+    .selfie{
+    height: 30%;
+    width: auto;
+    position: absolute;
+    left: 40px;
+    margin-top: 18vh;
+    }
+
+    h2{
+      position: absolute;
+      left: 40px;
+      top: 600px;
+    }
+
+    .page2{
+      font-size: 20px;
+      left: 40px;
+      top: 880px;
+    }
+
+    .p2-button{
+      left: 40px;
+      top: 900px;
+    }
+
+    h3{
+      position: absolute;
+      left: 40px;
+    }
+
+    .experience-heading{
+      position: absolute;
+      left: 40px;
+      top: 1660px;
+    }
+
+    .work-heading, .work-description, .work2-heading, .course-heading{
+      position: absolute;
+      left: 40px;
+    }
+
+    .p3-icons, .p3-icons-courses{
+      display: none;
+    }
+
+   .course-heading{
+    top: 2100px;
+   }
+
+   .courses{
+    position: absolute;
+    width: 500px;
+    left: -670px;
+    top: 2180px;
+   }
+
+   .p3-button{
+    position: absolute;
+    left: 40px;
+    top: 1930px;
+   }
+
+   .about-button{
+    right: 300px;
+   }
+
+   .experience-button{
+    right: 500px;
+   }
+
+   .project-button{
+    right: 120px;
+   }
+   
+  }
+@media screen and (min-width: 1300px) {
+  h1{
+    color: white;
+  }
+  .selfie{
+    position: absolute;
+    left: 1000px;
+  }
+
+  h2, .page2, .line2, .p2-button{
+    left: 200px;
+  }
+
+  h3{
+    left: 480px;
+  }
+
+  .experience-heading, .work-heading, .work2-heading, .work-description, .p3-icons, .p3-button{
+    left: 200px;
+  }
+
+  .course-heading, .p3-icons-courses{
+    left: 900px;
+  }
+
+  .courses{
+    left: 200px;
+  }
+}
+
+@media (max-width: 500px){
+  h1{
+    color: white;
+  }
+
+  .menu-button{
+    font-size: 17px;
+  }
+
+  .about-button{
+    left: -10px;
+   }
+
+   .experience-button{
+    position: absolute;
+    left: 40%; 
+    transform: translateX(-50%); 
+   }
+
+   .project-button{
+    right: 30px;
+   }
+
+   .p3-button{
+    top: 205vh;
+   }
+}
+
+@media (min-width: 1500px){
+  h1{
+    color: white;
+  }
+  .courses{
+    left: 140px;
+  }
+}

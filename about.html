@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>About</title>
+        <link rel="stylesheet" href="styles/styles-about.css">
+    </head>
+    <body>
+        <!-- <video id="myVideo" width="640" height="360" autoplay muted controls>
+            <source src="test.mov" type="video/mp4">
+        </video> -->
+        <!-- <div class="home-button">
+            <a href="home.html">
+                <img src="https://www.pngkit.com/png/full/31-316559_white-home-icon-no-background.png">
+            </a>
+            <div class="home-dropdown">
+                <a href="about.html">About Me</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Conact</a>
+            </div>
+        </div> -->
+        <!-- <div class="typing-container">
+            <p id="welcome" class="about-typing"></p>
+        </div> -->
+        <button id="homeButton" class="menu-button home-button">
+        <a href="index.html" class="nav-link">Home</a></button>
+        <h1 id="heading"class="about">About Me!</h1>
+        
+        <button id="from-button" class="dropdown-button" onclick ="toggleDropdown('from')">where i'm from</button>
+        <div class="dropdown-content" id="dropdown-paragraph-from">
+            <p>I was born and raised in San Francisco, California!</p>
+            <button class="icon" onclick="toggleIcon('bridge')">
+                <img class="bridge-image" src="images/bridge-icon.png">
+                <div class="typing-container">
+                    <p id="about-typing" class="about-typing"></p>
+                </div>
+            </button>
+            <div id="bridge-content" style="display:none">
+                <img class="first image" src="images/sf1.png">
+                <p class="first-text pic-text" style="right:220px">mission dolores park</p> 
+                <img class="second image" src="images/sf2.png">
+                <p class="second-text pic-text" style="right:250px">twin peaks</p> 
+                <img class="third image" src="images/sf3.png">
+                <p class="third-text pic-text" style="left:250px">downtown</p> 
+                <img class="fourth image" src="images/sf 4.png">
+                <p class="fourth-text pic-text" style="left:200px">museum of modern arts</p> 
+            </div>
+        </div>
+        <button id ="hobbies-button"class="dropdown-button" onclick ="toggleDropdown('hobbies')" style="display:block">hobbies</button>
+        <div class="dropdown-content" id="dropdown-paragraph-hobbies">
+            <p>In my free time I like to go to the gym, go running, <br>
+                and explore new restaurants with my friends.</p>
+            <button class="icon" onclick="toggleIcon('lifting')">
+                <img class="lifting-image" src="data:image/png;base64,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">
+            </button>
+            <div id="lifting-content" style="display: none">
+                    <img class="first image" src="images/golden-gate-park.png">
+                    <p class="first-text pic-text">i love running in golden gate park!</p> 
+                    <img class="second image" src="images/gym.jpg">
+                    <p class="second-text pic-text">chest days at the gym are my favorite</p>
+                    <img class="third image" src="images/food1.png">
+                    <p class="third-text pic-text">i'm a sucker for italian food</p>
+                    <img class="fourth image" src="images/food3.png">
+                    <p class="fourth-text pic-text">so many pretty restaurants!</p>
+            </div>
+        </div>
+        <button id ="college-button"class="dropdown-button" onclick ="toggleDropdown('education')">college</button>
+        <div class="dropdown-content" id="dropdown-paragraph-education">
+            <p>I am  a sophomore at Brown University <br>
+                concentrating in Computer Science.</p>
+            <button class="icon" onclick="toggleIcon('brown')">
+                <img class="brown-image" src="images/brownlogo.png">
+            </button>
+            <div id="brown-content" style="display: none">
+                <img class="first image" src="images/brown1.png">
+                <p class="first-text pic-text" style="right:150px">the main green is so beautiful in the fall!</p> 
+                <img class="second image" src="images/brown2.png">
+                <p class="second-text pic-text" style="right:210px">my favorite study spot</p>
+                <img class="third image" src="images/brown3.png">
+                <p class="third-text pic-text" style="left:180px">countless hours spent in the CIT...</p>
+                <img class="fourth image" src="images/brown4.png">
+                <p class="fourth-text pic-text" style="left:230px">spring weekend!</p>
+        </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
