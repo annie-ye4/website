@@ -1,4 +1,4 @@
-<!-- # Responsive Personal Portfolio Website 
+# Responsive Personal Portfolio Website 
 A great professional looking and fully responsive personal website to showcase your development portfolio.
 
 ## Feature List and Screenshots
@@ -49,4 +49,4 @@ A great professional looking and fully responsive personal website to showcase y
 ## Author
 
 Email - animesh.rawat20@gmail.com \
-Portfolio - https://animesh-rawat.web.app/  -->
+Portfolio - https://animesh-rawat.web.app/ 
