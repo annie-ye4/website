@@ -8,11 +8,11 @@
   --header-height: 3rem;
   /*========== Colors ==========*/
   /* Change favorite color */
-  --hue-color: 250;
+  --hue-color: 30;
   /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
   /* HSL color mode */
-  --first-color: hsl(var(--hue-color), 69%, 61%);
-  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  --first-color: #987554;
+  --first-color-second: #987554;
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
   --title-color: hsl(var(--hue-color), 8%, 15%);
@@ -352,7 +352,7 @@ header {
 }
 
 .home__blob {
-  width: 200px;
+  width: 100px;
   fill: var(--first-color);
 }
 
@@ -461,7 +461,7 @@ header {
 
 .about__img {
   width: 200px;
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
   justify-self: center;
   align-self: center;
 }
@@ -724,6 +724,12 @@ header {
   border-radius: 0.5rem;
   justify-self: center;
 }
+.portfolio__img__tetris,
+.portfolio__img__dictionary {
+  width: 120px;
+  border-radius: 0.5rem;
+  justify-self: center;
+}
 
 .portfolio__title {
   font-size: var(--h3-font-size);
@@ -800,10 +806,17 @@ header {
 
 .contact__container {
   row-gap: 3rem;
+  /* grid-template-columns: repeat(1, 1fr); */
 }
 .contact__information {
   display: flex;
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-4);
+}
+
+.contact__horizontal-container {
+  display: flex;
+  justify-content: space-around;
+  width: 90%; /* Optional: Set a specific width if needed */
 }
 .contact__icon {
   font-size: 2rem;
@@ -949,7 +962,7 @@ header {
     grid-template-columns: 0.25fr 3fr;
   }
   .home__blob {
-    width: 180px;
+    width: 80px;
   }
   .qualification__data {
     gap: 0.5rem;
@@ -994,10 +1007,10 @@ header {
   .about__container,
   .project__container,
   .portfolio__content,
-  .contact__container,
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .qualification__sections {
     display: grid;
     grid-template-columns: 0.6fr;
@@ -1061,7 +1074,7 @@ header {
     column-gap: 2rem;
   }
   .home__blob {
-    width: 270px;
+    width: 170px;
   }
   .home__scroll {
     display: block;
@@ -1073,7 +1086,7 @@ header {
     column-gap: 5rem;
   }
   .about__img {
-    width: 350px;
+    width: 250px;
   }
   .about__description {
     text-align: initial;
@@ -1161,7 +1174,7 @@ header {
     padding: 0;
   }
   .home__blob {
-    width: 320px;
+    width: 200px;
   }
   .home__social {
     transform: translateX(-6rem);
@@ -1171,6 +1184,10 @@ header {
   }
   .portfolio__img {
     width: 350px;
+  }
+  .portfolio__img__tetris,
+  .portfolio__img__dictionary {
+    width: 150px;
   }
   .swiper-portfolio-icon {
     font-size: 3.5rem;

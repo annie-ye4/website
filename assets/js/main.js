@@ -182,19 +182,3 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
-
-function typeWriter(text, i, element) {
-  if (i < text.length) {
-    document.querySelector(element).innerHTML += text.charAt(i);
-    i++;
-    setTimeout(function () {
-      typeWriter(text, i, element);
-    }, 100); // Adjust the typing speed here (in milliseconds)
-  }
-}
-
-// Trigger typing effect on page load
-document.addEventListener("DOMContentLoaded", function () {
-  // Change the last argument to the appropriate CSS selector for your title element
-  typeWriter("Hi, I'm Annie!", 0, ".home__title");
-});
