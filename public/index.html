@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio website of Annie Ye. A summary of professional experience, 
+      skills, projects details and contact information."
+    />
+    <title>Annie Ye - Portfolio</title>
+
+    <!--==================== OPEN GRAPH META TAGS ===================== -->
+    <meta property="og:title" content="Annie Ye - Portfolio" />
+    <meta property="og:image" content="/assets/img/PwaImages/ios/512.png" />
+    <meta
+      property="og:description"
+      content="Portfolio website of Annie Ye. A summary of professional experience, 
+      skills, projects details and contact information."
+    />
+
+    <!--==================== TWITTER META TAGS ===================== -->
+    <meta name="twitter:title" content="Annie Ye - Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Portfolio website of Annie Ye. A summary of professional experience, 
+      skills, projects details and contact information."
+    />
+    <meta name="twitter:image" content="/assets/img/PwaImages/ios/512.png" />
+
+    <!--==================== UNICONS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!-- ====================PWA================== -->
+    <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/32.png" />
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/72.png" />
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/100.png" />
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/128.png" />
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/144.png" />
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/152.png" />
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/192.png" />
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/256.png" />
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/512.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#6E57E0" />
+    <meta name="theme-color" content="#6E57E0" />
+
+    <!-- ============FAVICONS============== -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets//img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/img/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/img/favicons/favicon.ico"
+    />
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- ===================== LOADER ==================== -->
+    <div id="loading">
+      <div class="loader"><span></span><span>/></span></div>
+    </div>
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo noSelect">Annie Ye</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link noSelect active-link">
+                <i class="uil uil-estate nav__icon"></i> Home
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link noSelect">
+                <i class="uil uil-user nav__icon"></i> About
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#skills" class="nav__link noSelect">
+                <i class="uil uil-file-alt nav__icon"></i> Skills
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link noSelect">
+                <i class="uil uil-scenery nav__icon"></i> Portfolio
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link noSelect">
+                <i class="uil uil-message nav__icon"></i> Contact Me
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close noSelect" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <!-- theme change button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle noSelect" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid"></div>
+
+          <div class="home__img">
+            <svg
+              class="home__blob"
+              viewBox="0 0 200 187"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <mask id="mask0" mask-type="alpha">
+                <path
+                  d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                />
+              </mask>
+            </svg>
+          </div>
+
+          <div class="home__data">
+            <h1 class="home__title">Hi, I'm Annie!</h1>
+            <h3 class="home__subtitle"></h3>
+            <p class="home__description">
+              I'm studying computer science at Brown University with an interest
+              in Web Development and Artificial Intelligence.
+            </p>
+            <a href="#contact" class="button button--flex">
+              Contact Me<i class="uil uil-message button__icon"></i>
+            </a>
+          </div>
+        </div>
+        <div class="home__scroll">
+          <a href="#about" class="home__scroll-button button--flex">
+            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+            <span class="home__scroll-name">Scroll Down</span>
+            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+          </a>
+        </div>
+        <!-- </div>; -->
+      </section>
+    </main>
+
+    <!--==================== ABOUT ====================-->
+
+    <section class="about section" id="about">
+      <h2 class="section__title">About Me</h2>
+      <span class="section__subtitle">My Introduction</span>
+
+      <div class="about__container container grid">
+        <img src="assets/img/selfie2.png" alt="" class="about__img" />
+
+        <div class="about__data">
+          <p class="about__description">
+            I'm from San Francisco, California and I am currently a sophomore at
+            Brown University. <br />
+            <br />
+            I have experience working with web technologies such as HTML, CSS,
+            JavaScript, TypeScript, and React and languages such as Python and
+            Java.<br />
+            <br />
+            Besides coding, I like going to the gym and exploring new
+            restaurants with my friends! I also love listening to music and
+            spend a lot of my time on Spotify.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== SKILLS ====================-->
+
+    <section class="skills section" id="skills">
+      <h2 class="section__title">Skills</h2>
+      <span class="section__subtitle">My tech stack</span>
+      <div class="skills__container container grid">
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="/assets/img/skills/html.svg"
+            alt="angular"
+          />
+          <div class="skills__container-name">HTML</div>
+        </div>
+
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="/assets/img/skills/react.svg"
+            alt="react"
+          />
+          <div class="skills__container-name">React</div>
+        </div>
+
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="/assets/img/skills/css.svg"
+            alt="vue"
+          />
+          <div class="skills__container-name">CSS</div>
+        </div>
+
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="/assets/img/skills/typescript.svg"
+            alt="typescript"
+          />
+          <div class="skills__container-name">TypeScript</div>
+        </div>
+
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="/assets/img/skills/javascript.svg"
+            alt="javascript"
+          />
+          <div class="skills__container-name">JavaScript</div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== QUALIFICATOIN ====================-->
+
+    <section class="qualification section">
+      <h2 class="section__title">Experience</h2>
+      <span class="section__subtitle"></span>
+
+      <div class="qualification__container container">
+        <div class="qualification__tabs">
+          <div
+            class="qualification__button button--flex qualification__active"
+            data-target="#work"
+          >
+            <i class="uil uil-briefcase-alt qualification__icon"> </i> Work
+          </div>
+
+          <div
+            class="qualification__button button--flex"
+            data-target="#education"
+          >
+            <i class="uil uil-graduation-cap qualification__icon"> </i>
+            Education
+          </div>
+        </div>
+
+        <div class="qualification__sections">
+          <!--==================== QUALIFICATOIN CONTENT 1====================-->
+          <div
+            class="qualification__content qualification__active"
+            data-content
+            id="work"
+          >
+            <!--==================== QUALIFICATION 1====================-->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">Intern</h3>
+                <span class="qualification__subtitle"> MissionBit </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> 2020
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATION 2====================-->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+              <div>
+                <h3 class="qualification__title">Lead Instructor</h3>
+                <span class="qualification__subtitle"> TechKnowHow </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> 2023
+                </div>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATOIN 3====================-->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">Intern Web Developer</h3>
+                <span class="qualification__subtitle"> CHLDC </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> 2023
+                </div>
+              </div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATOIN 4====================-->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <!-- <span class="qualification__line"></span> -->
+              </div>
+              <div>
+                <h3 class="qualification__title">Teaching Assistant</h3>
+                <span class="qualification__subtitle">
+                  Introduction to Software Engineering
+                </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> 2023 - 2024
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== QUALIFICATOIN CONTENT 2====================-->
+          <div class="qualification__content" data-content id="education">
+            <!--==================== QUALIFICATOIN 1====================-->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">
+                  Object-Oriented Programming<br />
+                  <br />
+                  Data Structures and Algorithms
+                </h3>
+
+                <span class="qualification__subtitle"> </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> 2022-2023
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATOIN 2====================-->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <!-- <span class="qualification__line"></span> -->
+              </div>
+              <div>
+                <h3 class="qualification__title">
+                  Software Engineering<br /><br />Artificial Intelligence
+                </h3>
+                <span class="qualification__subtitle"> </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> 2023
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== PORTFOLIO ====================-->
+
+    <section class="portfolio section" id="portfolio">
+      <h2 class="section__title">Portfolio</h2>
+      <span class="section__subtitle">Most recent work</span>
+
+      <div class="portfolio__container container swiper-container">
+        <div class="swiper-wrapper">
+          <!--==================== PORTFOLIO 1====================-->
+          <div class="portfolio__content grid swiper-slide">
+            <img
+              src="/assets/img/portfolio/maps.png"
+              alt=""
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Map Searcher</h3>
+              <p class="portfolio__description">
+                Integrates bounding box and keyword search APIs with TypeScript,
+                React, and Mapbox.
+              </p>
+              <a
+                href="https://github.com/cs0320-f23/maps-aye15-lweng1"
+                target="_blank"
+                class="button button--flex button--small portfolio__button"
+              >
+                Demo
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--==================== PORTFOLIO 2====================-->
+          <div class="portfolio__content grid swiper-slide">
+            <img
+              src="/assets/img/portfolio/dictionary.png"
+              alt=""
+              class="portfolio__img__dictionary"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Dictionary</h3>
+              <p class="portfolio__description">
+                Utilizes API integration for real-time data retrieval and word
+                pronunciation.
+              </p>
+              <a
+                href="https://github.com/rawatanimesh/angular-workflow-track-service-request-graph"
+                target="_blank"
+                class="button button--flex button--small portfolio__button"
+              >
+                Demo
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--==================== PORTFOLIO 3====================-->
+          <div class="portfolio__content grid swiper-slide">
+            <img
+              src="/assets/img/portfolio/bots.png"
+              alt=""
+              class="portfolio__img__tetris"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Game of Thrones</h3>
+              <p class="portfolio__description">
+                Built a versatile bot to play a grid game, using techniques such
+                as adversarial search, machine learning, and reinforcement
+                learning.
+              </p>
+              <a
+                href="https://github.com/CSCI1410-fall2023/final-project-ay"
+                target="_blank"
+                class="button button--flex button--small portfolio__button"
+              >
+                Demo
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--==================== PORTFOLIO 4====================-->
+          <div class="portfolio__content grid swiper-slide">
+            <img
+              src="/assets/img/portfolio/tetris.png"
+              alt=""
+              class="portfolio__img__tetris"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Tetris</h3>
+              <p class="portfolio__description">
+                Applies object-oriented principles and class interaction to
+                manage dynamic game flow.
+              </p>
+              <a
+                href="https://github.com/brown-cs15-2022/tetris-annie-ye4"
+                target="_blank"
+                class="button button--flex button--small portfolio__button"
+              >
+                Demo
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add arrows -->
+        <div class="swiper-button-next">
+          <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+        </div>
+        <div class="swiper-button-prev">
+          <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+        </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!--==================== CONTACT ME ====================-->
+
+    <section class="contact section" id="contact">
+      <h2 class="section__title">Contact</h2>
+      <span class="section__subtitle"></span>
+
+      <div class="contact__container container grid">
+        <div class="contact__horizontal-container">
+          <div class="contact__information">
+            <i class="uil uil-envelope contact__icon"></i>
+
+            <div>
+              <h3 class="contact__title">Email</h3>
+              <span class="contact__subtitle">annie_ye@brown.edu</span>
+            </div>
+          </div>
+
+          <div class="contact__information">
+            <a href="https://github.com/annie-ye4" target="_blank">
+              <i class="uil uil-github contact__icon"></i>
+            </a>
+
+            <div>
+              <h3 class="contact__title">Github</h3>
+              <span class="contact__subtitle">annie-ye4</span>
+            </div>
+          </div>
+
+          <div class="contact__information">
+            <a href="https://linkedin.com/in/annie-ye4" target="_blank">
+              <i class="uil uil-linkedin contact__icon"></i>
+            </a>
+
+            <div>
+              <h3 class="contact__title">LinkedIn</h3>
+              <span class="contact__subtitle">annie-ye4</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== FOOTER ====================-->
+
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Annie Ye</h1>
+            <span class="footer__subtitle"></span>
+          </div>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#about" class="footer__link">About</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="footer__link">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact" class="footer__link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="footer__socials">
+            <!-- <a href="" target="_blank" class="footer__social">
+              <i class="uil uil-facebook-f"></i>
+            </a> -->
+
+            <a
+              href="https://www.instagram.com/annie.ye/?hl=en"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-instagram"></i>
+            </a>
+
+            <a
+              href="https://open.spotify.com/user/yoitsannie"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="fa fa-spotify"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+
+    <!-- ===================== SHOW/HIDE LOADER ==================== -->
+    <script>
+      window.onload = function () {
+        document.getElementById("loading").style.display = "none";
+      };
+    </script>
+
+    <!-- =====================REGISTER SERVICE WORKER================ -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker
+            .register("/serviceWorker.js")
+            .then((res) => console.log("service worker registered"))
+            .catch((err) => console.log("service worker not registered", err));
+        });
+      }
+    </script>
+  </body>
+</html>
