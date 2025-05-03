@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
@@ -114,16 +116,21 @@
                 <i class="uil uil-file-alt nav__icon"></i> Skills
               </a>
             </li>
-
+            <li class="nav__item">
+                <a href="#experience" class="nav__link noSelect">
+                  <i class="uil uil-scenery nav__icon"></i> Experience
+                </a>
+              </li>
             <li class="nav__item">
               <a href="#portfolio" class="nav__link noSelect">
                 <i class="uil uil-scenery nav__icon"></i> Portfolio
               </a>
             </li>
 
+    
             <li class="nav__item">
               <a href="#contact" class="nav__link noSelect">
-                <i class="uil uil-message nav__icon"></i> Contact Me
+                <i class="uil uil-message nav__icon"></i> Contact
               </a>
             </li>
           </ul>
@@ -171,12 +178,16 @@
             <h1 class="home__title">Hi, I'm Annie!</h1>
             <h3 class="home__subtitle"></h3>
             <p class="home__description">
-              I'm studying computer science at Brown University with an interest
-              in Web Development and Artificial Intelligence.
+              I'm studying Computer Science at Brown University with an interest
+              in the intersection between 
+              <span class="software-engineering">Software Engineering</span>, 
+              <span class="artificial-intelligence">Artificial Intelligence</span>, and 
+              <span class="design">Design</span>.
             </p>
-            <a href="#contact" class="button button--flex">
+            
+            <!-- <a href="#contact" class="button button--flex">
               Contact Me<i class="uil uil-message button__icon"></i>
-            </a>
+            </a> -->
           </div>
         </div>
         <div class="home__scroll">
@@ -201,16 +212,14 @@
 
         <div class="about__data">
           <p class="about__description">
-            I'm from San Francisco, California and I am currently a sophomore at
+            I'm from San Francisco, California and I'm currently a junior at
             Brown University. <br />
             <br />
-            I have experience working with web technologies such as HTML, CSS,
-            JavaScript, TypeScript, and React and languages such as Python and
-            Java.<br />
+            I have experience working with web technologies such as React, HTML/CSS,
+            Java/TypeScript, and languages such as Python and Java.<br />
             <br />
-            Besides coding, I like going to the gym and exploring new
-            restaurants with my friends! I also love listening to music and
-            spend a lot of my time on Spotify.
+            Besides coding, I like going to the gym and I'm captain of the Brown Women's Wrestling Club.
+            I also enjoy baking gooey chocolate chip cookies!
           </p>
         </div>
       </div>
@@ -228,7 +237,7 @@
             src="assets/img/skills/html.svg"
             alt="angular"
           />
-          <div class="skills__container-name">HTML</div>
+          <div class="skills__container-name">HTML/CSS</div>
         </div>
 
         <div class="skills__container-box">
@@ -243,10 +252,10 @@
         <div class="skills__container-box">
           <img
             class="skills__container-img"
-            src="assets/img/skills/css.svg"
+            src="assets/img/skills/figma.svg"
             alt="vue"
           />
-          <div class="skills__container-name">CSS</div>
+          <div class="skills__container-name">Figma</div>
         </div>
 
         <div class="skills__container-box">
@@ -266,16 +275,25 @@
           />
           <div class="skills__container-name">JavaScript</div>
         </div>
+
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="assets/img/skills/python-logo.png"
+            alt="python"
+          />
+          <div class="skills__container-name">Python</div>
+        </div>
       </div>
     </section>
 
     <!--==================== QUALIFICATOIN ====================-->
 
-    <section class="qualification section">
+    <section class="qualification section" id="experience">
       <h2 class="section__title">Experience</h2>
       <span class="section__subtitle"></span>
 
-      <div class="qualification__container container">
+      <div class="qualification__container container wide-container">
         <div class="qualification__tabs">
           <div
             class="qualification__button button--flex qualification__active"
@@ -303,10 +321,10 @@
             <!--==================== QUALIFICATION 1====================-->
             <div class="qualification__data">
               <div>
-                <h3 class="qualification__title">Intern</h3>
-                <span class="qualification__subtitle"> MissionBit </span>
+                <h3 class="qualification__title">Software Engineering Intern</h3>
+                <span class="qualification__subtitle">Goldman Sachs</span>
                 <div class="qualification__calender">
-                  <i class="uil uil-calendar-alt"></i> 2020
+                  <i class="uil uil-calendar-alt"></i> Incoming
                 </div>
               </div>
 
@@ -324,10 +342,10 @@
                 <span class="qualification__line"></span>
               </div>
               <div>
-                <h3 class="qualification__title">Lead Instructor</h3>
-                <span class="qualification__subtitle"> TechKnowHow </span>
+                <h3 class="qualification__title">Head Teaching Assistant</h3>
+                <span class="qualification__subtitle">Intro to Software Engineering</span>
                 <div class="qualification__calender">
-                  <i class="uil uil-calendar-alt"></i> 2023
+                  <i class="uil uil-calendar-alt"></i> Current
                 </div>
               </div>
             </div>
@@ -335,10 +353,10 @@
             <!--==================== QUALIFICATOIN 3====================-->
             <div class="qualification__data">
               <div>
-                <h3 class="qualification__title">Intern Web Developer</h3>
-                <span class="qualification__subtitle"> CHLDC </span>
+                <h3 class="qualification__title">Intern Programmer</h3>
+                <span class="qualification__subtitle">Boston Fusion Corporation</span>
                 <div class="qualification__calender">
-                  <i class="uil uil-calendar-alt"></i> 2023
+                  <i class="uil uil-calendar-alt"></i> 2024
                 </div>
               </div>
               <div>
@@ -355,12 +373,12 @@
                 <!-- <span class="qualification__line"></span> -->
               </div>
               <div>
-                <h3 class="qualification__title">Teaching Assistant</h3>
+                <h3 class="qualification__title">Research Assistant</h3>
                 <span class="qualification__subtitle">
-                  Introduction to Software Engineering
+                  Leveraging LLMs for Medical Data Management
                 </span>
                 <div class="qualification__calender">
-                  <i class="uil uil-calendar-alt"></i> 2023 - 2024
+                  <i class="uil uil-calendar-alt"></i> 2024
                 </div>
               </div>
             </div>
@@ -369,18 +387,20 @@
           <!--==================== QUALIFICATOIN CONTENT 2====================-->
           <div class="qualification__content" data-content id="education">
             <!--==================== QUALIFICATOIN 1====================-->
+            
             <div class="qualification__data">
               <div>
                 <h3 class="qualification__title">
-                  Object-Oriented Programming<br />
-                  <br />
-                  Data Structures and Algorithms
+                  CSCI 1300: Interaction Design<br>
+                  CSCI 1951A: Data Science<br>
+                  CSCI 2002: Privacy and Personal Data Protection<br />
+
                 </h3>
 
-                <span class="qualification__subtitle"> </span>
-                <div class="qualification__calender">
-                  <i class="uil uil-calendar-alt"></i> 2022-2023
-                </div>
+                <span class="qualification__subtitle">Spring 2025</span>
+                <!-- <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> 2022-2026
+                </div> -->
               </div>
 
               <div>
@@ -394,16 +414,81 @@
               <div></div>
               <div>
                 <span class="qualification__rounder"></span>
-                <!-- <span class="qualification__line"></span> -->
+                <span class="qualification__line"></span>
               </div>
               <div>
                 <h3 class="qualification__title">
-                  Software Engineering<br /><br />Artificial Intelligence
+                  CSCI 1600: Real-time and Embedded Software<br />
+                  CSCI 1650: Software Security Exploitation<br />
+                  CSCI 1805: Computers, Freedom, and Privacy<br />
+                  DATA 0080: Data, Ethics, and Society
                 </h3>
-                <span class="qualification__subtitle"> </span>
-                <div class="qualification__calender">
-                  <i class="uil uil-calendar-alt"></i> 2023
-                </div>
+                <span class="qualification__subtitle">Fall 2024</span>
+                <!-- <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> 2022-2023
+                </div> -->
+              </div>
+            </div>
+
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">
+                  CSCI 0220: Discrete Structures and Probability<br />
+                  CSCI 0300: Computer Systems Fundamentals<br/>
+                  CSCI 1970: Undergraduate Research<br/>
+                </h3>
+                <span class="qualification__subtitle">Spring 2024</span>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+              <div>
+                <h3 class="qualification__title">
+                  CSCI 0320: Introduction to Software Engineering<br />
+                  CSCI 1410: Artificial Intelligence<br />
+                </h3>
+                <span class="qualification__subtitle">Fall 2023</span>
+                <!-- <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> 2022-2023
+                </div> -->
+              </div>
+            </div>
+
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">
+                  CSCI 0200: Data Structures and Algorithms
+                </h3>
+                <span class="qualification__subtitle">Spring 2023</span>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+              </div>
+              <div>
+                <h3 class="qualification__title">
+                  CSCI 0150: Object-Oriented Programming
+                  <br />
+                </h3>
+                <span class="qualification__subtitle">Fall 2022</span>
               </div>
             </div>
           </div>

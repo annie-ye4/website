@@ -171,11 +171,26 @@ img {
 
 /*==================== LAYOUT ====================*/
 
+.qualification__data > div:first-child {
+  text-align: right;
+}
+
+.qualification__data > div:last-child {
+  text-align: left;
+}
+
 .container {
   max-width: 768px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
+
+.wide-container {
+  max-width: 2200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .grid {
   display: grid;
@@ -375,8 +390,28 @@ header {
   margin-bottom: var(--mb-0-75);
 }
 
+.software-engineering {
+  font-family: 'Roboto Mono', monospace;
+  color: #9b65d4;
+  font-weight: 500;
+}
+
+.artificial-intelligence {
+  font-family: 'Orbitron', sans-serif;
+  color: #4A90E2;
+  font-weight: 600;
+}
+
+.design {
+  font-family: 'Baloo 2', cursive;
+  color: #D26A5A;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
 .home__description {
   margin-bottom: var(--mb-2);
+  font-size: 1.5rem;
 }
 
 .home__scroll {
@@ -561,8 +596,8 @@ header {
 }
 
 .qualification__title {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-normal);
 }
 
 .qualification__subtitle {
